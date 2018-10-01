@@ -2,19 +2,19 @@
 
 **Instagram Mini** is a photo sharing app using Parse as its backend.
 
-Time spent: **X** hours spent in total
+Time spent: **15** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [ ] User can sign up to create a new account using Parse authentication (+1pt)
-- [ ] User can log in and log out of his or her account (+1pt)
-- [ ] The current signed in user is persisted across app restarts (+1pt)
-- [ ] User can take a photo, add a caption, and post it to "Instagram" (+2pt)
-- [ ] User can view the last 20 posts submitted to "Instagram" (+2pt)
-- [ ] User can pull to refresh the last 20 posts submitted to "Instagram" (+1pt)
-- [ ] User can tap a post to view post details, including timestamp and caption (+2pt)
+- [x] User can sign up to create a new account using Parse authentication (+1pt)
+- [x] User can log in and log out of his or her account (+1pt)
+- [x] The current signed in user is persisted across app restarts (+1pt)
+- [x] User can take a photo, add a caption, and post it to "Instagram" (+2pt)
+- [x] User can view the last 20 posts submitted to "Instagram" (+2pt)
+- [x] User can pull to refresh the last 20 posts submitted to "Instagram" (+1pt)
+- [x] User can tap a post to view post details, including timestamp and caption (+2pt)
 
 The following **stretch** features are implemented:
 
@@ -41,14 +41,21 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. I would like to talk about the different syntax that can be implemented for closures. 
+2. I want to talk about how to parse a timestamp
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+**Loging In**
+<img src='https://i.imgur.com/ZOKYDj4.gif' title='Loging In' width='' alt='Loging In' />
+
+**New Post**
+<img src='https://i.imgur.com/WZddwG8.gif' title='New Post' width='' alt='New Post' />
+
+**Reload Feed**
+<img src='https://i.imgur.com/O0w9MXF.gif' title='Reload Feed' width='' alt='Reload Feed' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -62,6 +69,10 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+- This app was challenging to build because I am unfamiliar with the closure syntax in Swift.
+- I also had issues parsing the post information from Parse
+- Some of the resouces for building this app had unupdated syntax, so I struggled to find equivalent methods
 
 ## License
 
