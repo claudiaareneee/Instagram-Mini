@@ -16,6 +16,11 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func logoutButton(_ sender: Any) {
+        print("Trying to log out")
+        NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
+        
+    }
 
     /*
     // MARK: - Navigation

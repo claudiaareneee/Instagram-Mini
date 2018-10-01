@@ -10,13 +10,23 @@ import UIKit
 import Parse
 import ParseUI
 
-class HomeViewController: UIViewController, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDataSource, UIScrollViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var posts: [PFObject] = []
+    let refreshControl = UIRefreshControl()
+//    var isMoreDataLoading = false
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Initialize a UIRefreshControl
+        refreshControl.addTarget(self, action: #selector(refreshControlAction(_:)), for: UIControl.Event.valueChanged)
+        // add refresh control to table view
+        tableView.insertSubview(refreshControl, at: 0)
+        
         
         tableView.dataSource = self
         fetchPosts()
@@ -32,7 +42,6 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath) as! HomeTableViewCell
         let post = posts[indexPath.row]
         
-//        cell.post = post
         if post.object(forKey: "author") != nil {
             let user = post.object(forKey: "author") as! PFUser
             cell.usernameLabel.text = user.username
@@ -51,26 +60,52 @@ class HomeViewController: UIViewController, UITableViewDataSource {
         query.includeKey("author")
         query.limit = 20
         
+        //Asynchronously find more images
         query.findObjectsInBackground{ (posts: [PFObject]?, error: Error?) -> Void in
             if let posts = posts {
                 print("My posts: \(posts)")
                 self.posts = posts
+                self.refreshControl.endRefreshing()
             }
             else{
                 print("Error \(String(describing: error?.localizedDescription))")
             }
-            print("This is fun")
             self.tableView.reloadData()
         }
-        print("I got here")
-        
     }
     
-    @IBAction func logoutButton(_ sender: Any) {
-        print("Trying to log out")
-        NotificationCenter.default.post(name: NSNotification.Name("didLogout"), object: nil)
-    
+    // Makes a network request to get updated data
+    // Updates the tableView with the new data
+    // Hides the RefreshControl
+    @objc func refreshControlAction(_ refreshControl: UIRefreshControl) {
+        fetchPosts()
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell =  sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let post = posts[indexPath.row]
+            let detailViewController = segue.destination as! DetailViewController
+            detailViewController.post = post
+        }
+    }
+    
+    
+    
+    
+    
+    
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//         if !isMoreDataLoading {
+//            // Calculate the position of one screen length before the bottom of the results
+//            let scrollViewContentHeight = tableView.contentSize.height
+//            let scrollOffsetThreshold = scrollViewContentHeight - tableView.bounds.size.height
+//
+//            // When the user has scrolled past the threshold, start requesting
+//            if scrollView.contentOffset.y > scrollOffsetThreshold && tableView.isDragging{
+//                isMoreDataLoading = true
+//            }
+//        }
+//    }
 }
 
