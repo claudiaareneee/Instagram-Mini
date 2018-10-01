@@ -9,37 +9,38 @@
 import UIKit
 import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var usernameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        passwordTextField.delegate = self
+        usernameTextField.delegate = self
+        
         // Do any additional setup after loading the view.
     }
 
+    //User clicks sign in button and signs in user using parse
     @IBAction func onSignInButton(_ sender: Any) {
         let username = usernameTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         
-//UNCOMMENT NEXTLINES 3
-/*
         PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
             if let error = error {
                 print(error.localizedDescription)
+                //Account for error 202
             } else {
                 print("User login successful")
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
-            
         }
- */
     }
     
+    //User clicks sign up button and creates new user using parse
     @IBAction func onSingUpButton(_ sender: Any) {
-//UNCOMMENT NEXTLINES 2
-/*
+
         let newUser = PFUser()
         newUser.username = usernameTextField.text
         newUser.password = passwordTextField.text
@@ -54,7 +55,21 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
         }
- */
     }
+    
+    
+    //This dismisses the keyboard when hitting the 'done' button
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        usernameTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return true
+    }
+    
+    //This dismisses the keyboard when touching out of textField
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
 
 }

@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		49382D412159C8BD001F1E4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382D402159C8BD001F1E4C /* AppDelegate.swift */; };
-		49382D432159C8BD001F1E4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382D422159C8BD001F1E4C /* ViewController.swift */; };
 		49382D462159C8BD001F1E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49382D442159C8BD001F1E4C /* Main.storyboard */; };
 		49382D482159C8BE001F1E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49382D472159C8BE001F1E4C /* Assets.xcassets */; };
 		49382D4B2159C8BE001F1E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49382D492159C8BE001F1E4C /* LaunchScreen.storyboard */; };
 		49382D562159C8BF001F1E4C /* Instagram_MiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382D552159C8BF001F1E4C /* Instagram_MiniTests.swift */; };
 		49382D612159C8BF001F1E4C /* Instagram_MiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49382D602159C8BF001F1E4C /* Instagram_MiniUITests.swift */; };
+		4974AE04215FDF9B0019373B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974AE03215FDF9B0019373B /* HomeViewController.swift */; };
+		4974AE06215FE0330019373B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974AE05215FE0330019373B /* ProfileViewController.swift */; };
+		4974AE0C216015940019373B /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974AE0B216015940019373B /* UploadViewController.swift */; };
 		49A2C4CC2159E8DA00751B24 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A2C4CB2159E8DA00751B24 /* LoginViewController.swift */; };
+		49DF671421616BD400899E13 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF671321616BD400899E13 /* Post.swift */; };
+		49DF67162161895700899E13 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DF67152161895700899E13 /* HomeTableViewCell.swift */; };
 		9ECE1B9553F8D8E7EBD54801 /* Pods_Instagram_MiniUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9EE891B7639F2C1D9E63929 /* Pods_Instagram_MiniUITests.framework */; };
 		A82EAC484F9D4FD0B6D90115 /* Pods_Instagram_MiniTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7FFE9D3FCBCBCBEAA2B8CB /* Pods_Instagram_MiniTests.framework */; };
 		FE5DCDC8C473B179A9866B1B /* Pods_Instagram_Mini.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB618737A695AA9E166EAB5 /* Pods_Instagram_Mini.framework */; };
@@ -43,7 +47,6 @@
 		1F7FFE9D3FCBCBCBEAA2B8CB /* Pods_Instagram_MiniTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_MiniTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49382D3D2159C8BD001F1E4C /* Instagram Mini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram Mini.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49382D402159C8BD001F1E4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49382D422159C8BD001F1E4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49382D452159C8BD001F1E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49382D472159C8BE001F1E4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49382D4A2159C8BE001F1E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,7 +57,12 @@
 		49382D5C2159C8BF001F1E4C /* Instagram MiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Instagram MiniUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49382D602159C8BF001F1E4C /* Instagram_MiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instagram_MiniUITests.swift; sourceTree = "<group>"; };
 		49382D622159C8BF001F1E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4974AE03215FDF9B0019373B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4974AE05215FE0330019373B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4974AE0B216015940019373B /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		49A2C4CB2159E8DA00751B24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		49DF671321616BD400899E13 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		49DF67152161895700899E13 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		A63BECCCC23DEE15359F7DE5 /* Pods-Instagram MiniTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram MiniTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram MiniTests/Pods-Instagram MiniTests.release.xcconfig"; sourceTree = "<group>"; };
 		C9F30410710B89DB42DE3E8D /* Pods-Instagram Mini.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram Mini.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram Mini/Pods-Instagram Mini.debug.xcconfig"; sourceTree = "<group>"; };
 		D8399C48453FE7186D746B68 /* Pods-Instagram MiniUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram MiniUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram MiniUITests/Pods-Instagram MiniUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,13 +137,14 @@
 		49382D3F2159C8BD001F1E4C /* Instagram Mini */ = {
 			isa = PBXGroup;
 			children = (
+				4974AE02215FDF510019373B /* ViewControllers */,
 				49382D402159C8BD001F1E4C /* AppDelegate.swift */,
-				49382D422159C8BD001F1E4C /* ViewController.swift */,
+				49DF67152161895700899E13 /* HomeTableViewCell.swift */,
 				49382D442159C8BD001F1E4C /* Main.storyboard */,
 				49382D472159C8BE001F1E4C /* Assets.xcassets */,
 				49382D492159C8BE001F1E4C /* LaunchScreen.storyboard */,
 				49382D4C2159C8BE001F1E4C /* Info.plist */,
-				49A2C4CB2159E8DA00751B24 /* LoginViewController.swift */,
+				49DF671321616BD400899E13 /* Post.swift */,
 			);
 			path = "Instagram Mini";
 			sourceTree = "<group>";
@@ -156,6 +165,17 @@
 				49382D622159C8BF001F1E4C /* Info.plist */,
 			);
 			path = "Instagram MiniUITests";
+			sourceTree = "<group>";
+		};
+		4974AE02215FDF510019373B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49A2C4CB2159E8DA00751B24 /* LoginViewController.swift */,
+				4974AE03215FDF9B0019373B /* HomeViewController.swift */,
+				4974AE05215FE0330019373B /* ProfileViewController.swift */,
+				4974AE0B216015940019373B /* UploadViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		9A03D8902B439C3D30397657 /* Frameworks */ = {
@@ -310,6 +330,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Instagram Mini/Pods-Instagram Mini-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseUI/ParseUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -317,6 +338,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -397,8 +419,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A2C4CC2159E8DA00751B24 /* LoginViewController.swift in Sources */,
-				49382D432159C8BD001F1E4C /* ViewController.swift in Sources */,
+				4974AE0C216015940019373B /* UploadViewController.swift in Sources */,
+				49DF67162161895700899E13 /* HomeTableViewCell.swift in Sources */,
+				4974AE06215FE0330019373B /* ProfileViewController.swift in Sources */,
+				49DF671421616BD400899E13 /* Post.swift in Sources */,
 				49382D412159C8BD001F1E4C /* AppDelegate.swift in Sources */,
+				4974AE04215FDF9B0019373B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,16 +600,20 @@
 			baseConfigurationReference = C9F30410710B89DB42DE3E8D /* Pods-Instagram Mini.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYGH248NY2;
 				INFOPLIST_FILE = "Instagram Mini/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "claudia.Instagram-Mini";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.claudia.Instagram-Mini";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -592,16 +622,20 @@
 			baseConfigurationReference = 0A464506EB18AB9D997DF18D /* Pods-Instagram Mini.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QYGH248NY2;
 				INFOPLIST_FILE = "Instagram Mini/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "claudia.Instagram-Mini";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.claudia.Instagram-Mini";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
