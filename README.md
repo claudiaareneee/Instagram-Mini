@@ -49,12 +49,15 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 **Loging In**
+
 <img src='https://i.imgur.com/ZOKYDj4.gif' title='Loging In' width='' alt='Loging In' />
 
 **New Post**
+
 <img src='https://i.imgur.com/WZddwG8.gif' title='New Post' width='' alt='New Post' />
 
 **Reload Feed**
+
 <img src='https://i.imgur.com/O0w9MXF.gif' title='Reload Feed' width='' alt='Reload Feed' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
